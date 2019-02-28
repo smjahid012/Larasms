@@ -11,6 +11,13 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/', 'LoginController@getLogin')->name('login');
+
+Route::post('/login', 'LoginController@postLogin');
+
+Route::get('/logout', 'LoginController@getLogout');
+
+Route::group(['middleware'=> ['authen','roles']],function(){
+    Route::get('/dashboard', 'DasboardController@dashboard');
 });
+
