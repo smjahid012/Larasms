@@ -14,13 +14,15 @@ class UsersTableSeeder extends Seeder
     public function run()
     {
          User::create([
+            'role_id' =>1,
+            'active' =>1,
             'name' => 'smjahid',
             'username' => 'jibon',
             'email' => 'jibon@gmail.com',
             'password' => bcrypt('jibon123'),
-            'remember_toke' => str_random(10),
+            'remember_token' => str_random(10),
         ]);
 
-       
+
     }
 }

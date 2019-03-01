@@ -9,8 +9,8 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon.png">
-    <title>Elite University Admin</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('backendview.assets')}}/images/favicon.png" >
+    <title>University Admin Backend</title>
 
     <!-- page css -->
     <link href="dist/css/pages/login-register-lock.css" rel="stylesheet">
@@ -42,7 +42,7 @@
     <section id="wrapper" class="login-register login-sidebar" style="background-image:url(../assets/images/background/login-register.jpg);">
         <div class="login-box card">
             <div class="card-body">
-            <form class="form-horizontal form-material" id="loginform" action="{{ route('login') }}"   method="POST">
+            <form class="form-horizontal form-material" id="loginform" action="{{ route('login') }}"   method="post">
                  @csrf
                     <a href="javascript:void(0)" class="text-center db"><img src="../assets/images/logo-icon.png" alt="Home" /><br/><img src="../assets/images/logo-text.png" alt="Home" /></a>
                     <div class="form-group m-t-40">
@@ -76,7 +76,7 @@
                     </div>
                     <div class="form-group m-b-0">
                         <div class="col-sm-12 text-center">
-                            Don't have an account? <a href="pages-register2.html" class="text-primary m-l-5"><b>Sign Up</b></a>
+                            Don't have an account? <a href="#" class="text-primary m-l-5"><b>Sign Up</b></a>
                         </div>
                     </div>
                 </form>

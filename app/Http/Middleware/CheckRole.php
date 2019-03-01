@@ -1,8 +1,8 @@
 <?php
 
 namespace App\Http\Middleware;
-
 use Closure;
+
 
 class CheckRole
 {
@@ -16,7 +16,7 @@ class CheckRole
     public function handle($request, Closure $next)
     {
         $roles = $this->getRequiredRoleForRoute($request->route());
-        if($request->user()->hasRole($roles) || !roles){
+        if($request->user()->hasRole('roles') || '!roles'){
             return $next($request);
         }
         return redirect()->route('noPermission');
