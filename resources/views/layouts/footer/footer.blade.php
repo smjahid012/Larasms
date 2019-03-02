@@ -18,15 +18,26 @@
     <script src="{{ asset('backview')}}/assets/node_modules/popper/popper.min.js"></script>
     <script src="{{ asset('backview')}}/assets/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <!-- slimscrollbar scrollbar JavaScript -->
-    <script src="dist/js/perfect-scrollbar.jquery.min.js"></script>
+    <script src="{{ asset('backview')}}/dist/js/perfect-scrollbar.jquery.min.js"></script>
     <!--Wave Effects -->
-    <script src="dist/js/waves.js"></script>
+    <script src="{{ asset('backview')}}/dist/js/waves.js"></script>
     <!--Menu sidebar -->
-    <script src="dist/js/sidebarmenu.js"></script>
+    <script src="{{ asset('backview')}}/dist/js/sidebarmenu.js"></script>
     <!--Custom JavaScript -->
-    <script src="dist/js/custom.min.js"></script>
+    <script src="{{ asset('backview')}}/dist/js/custom.min.js"></script>
+
     <!-- ============================================================== -->
-    <!-- This page plugins -->
+    <!-- Course page plugins -->
+    <!-- Date Picker Plugin JavaScript -->
+    <script src="{{ asset('backview')}}/assets/node_modules/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
+    <script type="text/javascript">
+    // Date Picker
+    jQuery('.mydatepicker').datepicker();
+    </script>
+    <!-- Custom Theme JavaScript -->
+    <script src="{{ asset('backview')}}/dist/js/pages/jasny-bootstrap.js"></script>
+    <script src="{{ asset('backview')}}/dist/js/pages/mask.js"></script>
+
     <!-- ============================================================== -->
     <!--morris JavaScript -->
     <script src="{{ asset('backview')}}/assets/node_modules/raphael/raphael-min.js"></script>
@@ -35,7 +46,9 @@
     <!-- Popup message jquery -->
     <script src="{{ asset('backview')}}/assets/node_modules/toast-master/js/jquery.toast.js"></script>
     <!-- Chart JS -->
-    <script src="dist/js/dashboard1.js"></script>
+    <script src="{{ asset('backview')}}/dist/js/dashboard1.js"></script>
+
+
 </body>
 
 </html>
