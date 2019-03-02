@@ -9,13 +9,13 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('backendview.assets')}}/images/favicon.png" >
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('backview')}}/assets/images/favicon.png" >
     <title>University Admin Backend</title>
 
     <!-- page css -->
-    <link href="dist/css/pages/login-register-lock.css" rel="stylesheet">
+    <link href="{{ asset('backview')}}/dist/css/pages/login-register-lock.css" rel="stylesheet">
     <!-- Custom CSS -->
-    <link href="dist/css/style.min.css" rel="stylesheet">
+    <link href="{{ asset('backview')}}/dist/css/style.min.css" rel="stylesheet">
 
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -39,12 +39,12 @@
     <!-- ============================================================== -->
     <!-- Main wrapper - style you can find in pages.scss -->
     <!-- ============================================================== -->
-    <section id="wrapper" class="login-register login-sidebar" style="background-image:url(../assets/images/background/login-register.jpg);">
+    <section id="wrapper" class="login-register login-sidebar" style="background-image:url({{ asset('backview')}}/assets/images/background/login-register.jpg);">
         <div class="login-box card">
             <div class="card-body">
             <form class="form-horizontal form-material" id="loginform" action="{{ route('login') }}"   method="post">
                  @csrf
-                    <a href="javascript:void(0)" class="text-center db"><img src="../assets/images/logo-icon.png" alt="Home" /><br/><img src="../assets/images/logo-text.png" alt="Home" /></a>
+                    <a href="javascript:void(0)" class="text-center db"><img src="{{ asset('backview')}}/assets/images/logo-icon.png" alt="Home" /><br/><img src="{{ asset('backview')}}/assets/images/logo-text.png" alt="Home" /></a>
                     <div class="form-group m-t-40">
                         <div class="col-xs-12">
                             <input class="form-control" type="text" name="username" required="" placeholder="Username">
@@ -107,10 +107,10 @@
     <!-- ============================================================== -->
     <!-- All Jquery -->
     <!-- ============================================================== -->
-    <script src="../assets/node_modules/jquery/jquery-3.2.1.min.js"></script>
+    <script src="{{ asset('backview')}}/assets/node_modules/jquery/jquery-3.2.1.min.js"></script>
     <!-- Bootstrap tether Core JavaScript -->
-    <script src="../assets/node_modules/popper/popper.min.js"></script>
-    <script src="../assets/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="{{ asset('backview')}}/assets/node_modules/popper/popper.min.js"></script>
+    <script src="{{ asset('backview')}}/assets/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <!--Custom JavaScript -->
     <script type="text/javascript">
         $(function() {

@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,15 +9,15 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('backview')}}/assets/images/favicon.png">
     <title>Elite Admin Template - The Ultimate Multipurpose admin template</title>
     <!-- This page CSS -->
     <!-- chartist CSS -->
-    <link href="../assets/node_modules/morrisjs/morris.css" rel="stylesheet">
+    <link href="{{ asset('backview')}}/assets/node_modules/morrisjs/morris.css" rel="stylesheet">
     <!--Toaster Popup message CSS -->
-    <link href="../assets/node_modules/toast-master/css/jquery.toast.css" rel="stylesheet">
+    <link href="{{ asset('backview')}}/assets/node_modules/toast-master/css/jquery.toast.css" rel="stylesheet">
     <!-- Morris CSS -->
-    <link href="../assets/node_modules/morrisjs/morris.css" rel="stylesheet">
+    <link href="{{ asset('backview')}}/assets/node_modules/morrisjs/morris.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link href="dist/css/style.min.css" rel="stylesheet">
     <!-- Dashboard 1 Page CSS -->
@@ -36,12 +35,12 @@
     <!-- ============================================================== -->
     <!-- Preloader - style you can find in spinners.css -->
     <!-- ============================================================== -->
-    <div class="preloader">
+    {{-- <div class="preloader">
         <div class="loader">
             <div class="loader__figure"></div>
             <p class="loader__label">Elite admin</p>
         </div>
-    </div>
+    </div> --}}
     <!-- ============================================================== -->
     <!-- Main wrapper - style you can find in pages.scss -->
     <!-- ============================================================== -->
@@ -144,64 +143,8 @@
                 <!-- ============================================================== -->
                 <!-- End Info box -->
                 <!-- ============================================================== -->
-                <!-- ============================================================== -->
-                <!-- Over Visitor, Our income , slaes different and  sales prediction -->
-                <!-- ============================================================== -->
-                <!-- .row -->
-                <div class="row">
-                    <div class="col-lg-8">
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="d-flex align-items-center">
-                                    <h5 class="card-title text-uppercase">University Earnings<br><small class="text-muted">All Earnings are in million $</small></h5>
-                                    <div class="ml-auto">
-                                        <ul class="list-inline font-12">
-                                            <li><i class="fa fa-circle text-dark"></i> Arts</li>
-                                            <li><i class="fa fa-circle text-info"></i> Commerse</li>
-                                            <li><i class="fa fa-circle text-success"></i> Science</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div id="morris-bar-chart" style="height:375px;"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="card m-b-15">
-                                    <div class="card-body">
-                                        <h5 class="card-title text-uppercase">Earning From Medical college</h5>
-                                        <div class="row">
-                                            <div class="col-6 m-t-30">
-                                                <h1 class="text-info">$64057</h1>
-                                                <p class="text-muted">APRIL 2017</p> <b>(150 Sales)</b> </div>
-                                            <div class="col-6">
-                                                <div id="sparkline2dash" class="text-right"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="card bg-info m-b-15">
-                                    <div class="card-body">
-                                        <h5 class="text-white card-title text-uppercase">Earning From Engineering college</h5>
-                                        <div class="row">
-                                            <div class="col-6 m-t-30">
-                                                <h1 class="text-white">$30447</h1>
-                                                <p class="text-white">APRIL 2017</p> <b class="text-white">(110 Sales)</b> </div>
-                                            <div class="col-md-6 col-sm-6 col-6">
-                                                <div id="sales1" class="text-right"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- /.row -->
+
+
                 <!-- ============================================================== -->
                 <!-- Comment - table -->
                 <!-- ============================================================== -->
@@ -331,6 +274,8 @@
                 <!-- ============================================================== -->
                 <!-- End Page Content -->
                 <!-- ============================================================== -->
+
+
                 <!-- ============================================================== -->
                 <!-- Right sidebar -->
                 <!-- ============================================================== -->
@@ -358,28 +303,28 @@
                             <ul class="m-t-20 chatonline">
                                 <li><b>Chat option</b></li>
                                 <li>
-                                    <a href="javascript:void(0)"><img src="../assets/images/users/1.jpg" alt="user-img" class="img-circle"> <span>Varun Dhavan <small class="text-success">online</small></span></a>
+                                    <a href="javascript:void(0)"><img src="{{ asset('backview')}}/assets/images/users/1.jpg" alt="user-img" class="img-circle"> <span>Varun Dhavan <small class="text-success">online</small></span></a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0)"><img src="../assets/images/users/2.jpg" alt="user-img" class="img-circle"> <span>Genelia Deshmukh <small class="text-warning">Away</small></span></a>
+                                    <a href="javascript:void(0)"><img src="{{ asset('backview')}}/assets/images/users/2.jpg" alt="user-img" class="img-circle"> <span>Genelia Deshmukh <small class="text-warning">Away</small></span></a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0)"><img src="../assets/images/users/3.jpg" alt="user-img" class="img-circle"> <span>Ritesh Deshmukh <small class="text-danger">Busy</small></span></a>
+                                    <a href="javascript:void(0)"><img src="{{ asset('backview')}}/assets/images/users/3.jpg" alt="user-img" class="img-circle"> <span>Ritesh Deshmukh <small class="text-danger">Busy</small></span></a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0)"><img src="../assets/images/users/4.jpg" alt="user-img" class="img-circle"> <span>Arijit Sinh <small class="text-muted">Offline</small></span></a>
+                                    <a href="javascript:void(0)"><img src="{{ asset('backview')}}/assets/images/users/4.jpg" alt="user-img" class="img-circle"> <span>Arijit Sinh <small class="text-muted">Offline</small></span></a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0)"><img src="../assets/images/users/5.jpg" alt="user-img" class="img-circle"> <span>Govinda Star <small class="text-success">online</small></span></a>
+                                    <a href="javascript:void(0)"><img src="{{ asset('backview')}}/assets/images/users/5.jpg" alt="user-img" class="img-circle"> <span>Govinda Star <small class="text-success">online</small></span></a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0)"><img src="../assets/images/users/6.jpg" alt="user-img" class="img-circle"> <span>John Abraham<small class="text-success">online</small></span></a>
+                                    <a href="javascript:void(0)"><img src="{{ asset('backview')}}/assets/images/users/6.jpg" alt="user-img" class="img-circle"> <span>John Abraham<small class="text-success">online</small></span></a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0)"><img src="../assets/images/users/7.jpg" alt="user-img" class="img-circle"> <span>Hritik Roshan<small class="text-success">online</small></span></a>
+                                    <a href="javascript:void(0)"><img src="{{ asset('backview')}}/assets/images/users/7.jpg" alt="user-img" class="img-circle"> <span>Hritik Roshan<small class="text-success">online</small></span></a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0)"><img src="../assets/images/users/8.jpg" alt="user-img" class="img-circle"> <span>Pwandeep rajan <small class="text-success">online</small></span></a>
+                                    <a href="javascript:void(0)"><img src="{{ asset('backview')}}/assets/images/users/8.jpg" alt="user-img" class="img-circle"> <span>Pwandeep rajan <small class="text-success">online</small></span></a>
                                 </li>
                             </ul>
                         </div>
